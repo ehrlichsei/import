@@ -1,8 +1,9 @@
-from math.a import function_a
+from server.math import a
+import os
 
 def function_c():
-    function_a()
-    print("function c is called")
+    a.function_a()
+    print("function c is called", os.getcwd())
 
 if __name__ == "__main__":
     function_c()
